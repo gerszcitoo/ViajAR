@@ -1,0 +1,209 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: linear-gradient(90deg, rgba(130, 190, 208, 1) 0%, rgba(235, 252, 255, 1) 100%); */
+    background-repeat: no-repeat;
+    /* display: flex; */
+    align-content: center;
+    margin: 0 auto;
+}
+
+
+/* -----------------------INICIO NAVBAR--------------------- */
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    background-color: #111111;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.1s;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav>ul>li {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px;
+    transition: 0.5s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+nav>ul>li:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    /* color: #111111; */
+    /* transform: rotate(-6deg) skewY(3deg) scaleX(.866025); */
+}
+
+nav>ul>li:hover>a {
+    color: black;
+}
+
+nav>ul>li:active>a {
+    transform: scale(1.2);
+}
+
+
+/* -----------------------FIN NAVBAR--------------------- */
+
+.inicio {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/src/img/bsas.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.argentina {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.explorar {
+    display: none;
+}
+
+.argentina:hover {
+    font-size: 4rem;
+}
+
+.destinos {
+   
+ 
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.valor{
+width: 10rem;
+ margin-left: auto;
+ text-align: right;
+
+
+}
+.titulo{
+
+    text-align: center;
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img{
+width: 65%;
+height: 55%;
+margin: 2rem;
+
+
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.contder{
+  
+    flex: 1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+#maps{
+    padding-top: 45px;
+width: 85%;
+
+
+}
+
+
+#text{
+   margin-left: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 45px;
+    margin-right: 40px;
+
+
+
+
+
+}
+.contizq{
+
+    flex: 2;
+    height: 700px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 45px;
+}
+#imagen{
+    width: 90%;
+}
+
+
+
+#footer-main {
+    width: 100%;
+    height: 10vh;
+    background: white;
+    top: 0;
+}
+
+
+/* -----------------------RESPONSIVE--------------------- */
+
+@media (max-width: 1000px) {
+    nav>ul {
+        display: block;
+    }
+    nav>ul>li:hover {
+        transform: rotate(0);
+    }
+}
+
+
+/* -----------------------FIN RESPONSIVE--------------------- */

@@ -1,0 +1,171 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    align-content: center;
+    margin: 0 auto;
+    background-color: #111111;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* -----------------------INICIO NAVBAR--------------------- */
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    background-color: #111111;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.1s;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav>ul>li {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 5px;
+    transition: 0.5s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+nav>ul>li:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    /* color: #111111; */
+    /* transform: rotate(-6deg) skewY(3deg) scaleX(.866025); */
+}
+
+nav>ul>li:hover>a {
+    color: black;
+}
+
+nav>ul>li:active>a {
+    transform: scale(1.1);
+}
+
+
+/* -----------------------FIN NAVBAR--------------------- */
+
+.inicio {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 90vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/src/img/patagonia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.argentina {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-size: 3.5rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.explorar {
+    display: none;
+}
+
+.argentina:hover {
+    font-size: 4rem;
+}
+
+
+/* -----------------------ACERCA DE--------------------- */
+
+.about {
+    color: white;
+    height: 40vh;
+}
+
+
+/* -----------------------VER MAS--------------------- */
+
+#footer-main {
+    width: 100%;
+    height: 10vh;
+    background: white;
+    top: 0;
+}
+
+
+/* -----------------------DESTINOS--------------------- */
+
+.destinos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    color: white;
+    height: 100%;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    background: #fff;
+    color: #000;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.card_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -----------------------RESPONSIVE--------------------- */
+
+@media (max-width: 1000px) {
+    nav>ul {
+        display: block;
+    }
+    nav>ul>li:hover {
+        transform: rotate(0);
+    }
+}
+
+
+/* -----------------------FIN RESPONSIVE--------------------- */
