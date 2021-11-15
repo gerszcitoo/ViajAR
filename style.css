@@ -100,17 +100,6 @@ nav>ul>a:active {
 }
 
 
-/* -----------------------ACERCA DE--------------------- */
-
-.about {
-    color: white;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 /* -----------------------VER MAS--------------------- */
 
 #footer-main {
@@ -126,6 +115,22 @@ nav>ul>a:active {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+}
+
+
+/* -----------------------ACERCA DE--------------------- */
+
+.about {
+    /* font-size: 1.5rem; */
+    color: white;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about h1 {
+    font-size: 3.5rem;
 }
 
 
@@ -174,6 +179,27 @@ h2 {
 h4 {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+
+/* -----------------------CONTACTO--------------------- */
+
+.contactanos h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
