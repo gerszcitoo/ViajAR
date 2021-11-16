@@ -9,10 +9,7 @@ body {
     align-content: center;
     margin: 0 auto;
     background-color: #111111;
-}
-
-html {
-    scroll-behavior: smooth;
+    color: white;
 }
 
 
@@ -73,9 +70,9 @@ nav>ul>a:active {
 .inicio {
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     height: 90vh;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/src/img/patagonia.jpg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/destinos/bsas/src/img/bsas.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,40 +94,6 @@ nav>ul>a:active {
 
 .explorar {
     display: none;
-}
-
-
-/* -----------------------VER MAS--------------------- */
-
-#footer-main {
-    width: 100%;
-    height: 10vh;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#footer-main a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-}
-
-
-/* -----------------------ACERCA DE--------------------- */
-
-.about {
-    /* font-size: 1.5rem; */
-    color: white;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about h1 {
-    font-size: 3.5rem;
 }
 
 
@@ -182,95 +145,73 @@ h4 {
 }
 
 
-/* -----------------------CONTACTO--------------------- */
+/* -----------------------FIN DESTINOS--------------------- */
 
-.iconos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+.valor {
+    width: 10rem;
+    margin-left: auto;
+    text-align: right;
 }
 
-.contactanos h2 {
-    font-size: 2rem;
-    color: white;
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.icon-button {
-    background-color: grey;
-    border-radius: 3.6rem;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 2.0rem;
-    height: 3.6rem;
-    line-height: 3.6rem;
-    margin: 0 5px;
-    position: relative;
+.titulo {
     text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 3.6rem;
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.icon-button:nth-child(2) {
-    margin-right: 2rem;
-    margin-left: 2rem;
+.img {
+    width: 65%;
+    height: 55%;
+    margin: 2rem;
 }
 
-.icon-button span {
-    border-radius: 0;
-    display: block;
-    height: 0;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 0;
+.cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-.icon-button:hover span {
-    width: 3.6rem;
-    height: 3.6rem;
-    border-radius: 3.6rem;
-    margin: -1.8rem;
+.contder {
+    flex: 1;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.facebook span {
-    background-color: #3B5998;
+#maps {
+    padding-top: 45px;
+    width: 85%;
 }
 
-.icon-button i {
-    background: none;
-    color: white;
-    height: 3.6rem;
-    left: 0;
-    line-height: 3.6rem;
-    position: absolute;
+#text {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    margin-right: 40px;
+}
+
+.contizq {
+    flex: 2;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+}
+
+#imagen {
+    width: 90%;
+}
+
+#footer-main {
+    width: 100%;
+    height: 10vh;
+    background: white;
     top: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 3.6rem;
-    z-index: 10;
-}
-
-.icon-button .icon-facebook {
-    color: #3B5998;
-}
-
-.icon-button:hover .icon-facebook {
-    color: white;
 }
 
 

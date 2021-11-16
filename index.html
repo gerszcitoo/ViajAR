@@ -8,16 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <!-- --------------------------------------------- INICIO NAVBAR ------------------------------------------------------------ -->
     <title>ViajAR</title>
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca</a></li>
-            <li><a href="#page-1">Destinos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="#page-1">
+                <li>Acerca de</li>
+            </a>
+            <a href="#page-2">
+                <li>Destinos</li>
+            </a>
+            <a href="#page-3">
+                <li>Contacto</li>
+            </a>
         </ul>
     </nav>
 </header>
@@ -27,54 +36,74 @@
     <!-- ----------------------------------------- INICIO -------------------------------------------------------------- -->
     <div class="inicio">
         <h1 class="argentina"><strong>Conocé Argentina</strong></h1>
-        <div id="footer-main"></div>
+        <div id="footer-main">
+            <a href="#page-1">Conocer más</a>
+        </div>
     </div>
     <!-- ----------------------------------------- ACERCA DE -------------------------------------------------------------- -->
     <div class="about">
-        <h1>Acerca de nosotros:</h1>
+        <h1 id="page-1">Acerca de nosotros</h1>
         <h2>Somos personas</h2>
     </div>
     <!-- ----------------------------------------- CARTAS DESTINOS -------------------------------------------------------------- -->
-    <div class="destinos">
-        <div class="card">
-            <div class="card_img">
-                <img src="https://images.clarin.com/2020/08/13/neom-el-silicon-valley-saudi___Xe28uhHpA_1200x630__1.jpg" alt="Buenos Aires">
+    <div class="cartas">
+        <a href="destinos\bsas\bsas.html">
+            <div class="destinos">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="https://content.r9cdn.net/rimg/dimg/42/2f/addb7f9b-city-4012-16916c05055.jpg?crop=true&width=1366&height=768&xhint=1627&yhint=1054" alt="Buenos Aires">
+                    </div>
+                    <h2 id="page-2">Buenos Aires</h2>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+                </div>
+        </a>
+        <a href="destinos/la-pampa/pampa.html">
+            <div class="card">
+                <div class="card_img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Maraco%2C_La_Pampa%2C_Argentina_-_panoramio_%281%29.jpg" alt="La Pampa">
+                </div>
+                <h2 href="">La Pampa</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
             </div>
-            <h2 href="destinos\bsas\index.html" id="page-1">Buenos Aires</h2>
-            <h4>Aires buenos</h4>
-        </div>
+        </a>
         <div class="card">
             <div class="card_img">
-                <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/10/27/5fa537698bcf9.jpeg" alt="La Pampa">
-            </div>
-            <h2 href="">La Pampa</h2>
-            <h4>Hay indios</h4>
-        </div>
-        <div class="card">
-            <div class="card_img">
-                <img src="https://i2.wp.com/sinmordaza.com/wp-content/uploads/2020/03/Flavio-Mendoza.jpeg?fit=722%2C442&ssl=1" alt="Mendoza">
+                <img src="https://tripin.travel/wp-content/uploads/2020/06/turismo-mendoza-2-web.jpg" alt="Mendoza">
             </div>
             <h2 href="">Mendoza</h2>
-            <h4>La tierra del vino y de Flavio Mendoza</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
         </div>
         <div class="card">
             <div class="card_img">
-                <img src="https://i.ytimg.com/vi/xc7JONEZYxU/maxresdefault.jpg" alt="Tierra del Fuego">
+                <img src="https://loscormoranes.com/wp-content/uploads/2018/07/tierradelfuego.jpg" alt="Tierra del Fuego">
             </div>
             <h2 href="">Tierra del Fuego</h2>
-            <h4>TERRA DO FOGO KKKKK</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
         </div>
         <div class="card">
             <div class="card_img">
-                <img src="https://images.clarin.com/2020/08/13/neom-el-silicon-valley-saudi___Xe28uhHpA_1200x630__1.jpg" alt="Buenos Aires">
+                <img src="https://img.lavoz.com.ar/sites/default/files/styles/landscape_1170_658/public/nota_periodistica/Obelisco_1575559934.jpg" alt="Buenos Aires">
             </div>
             <h2 href="" id="page-1">CABA</h2>
-            <h4>AAAAAAAAAAAAAAAAAAAAAAAA</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
         </div>
-    </div>
-    </div>
-
-    <script src="script.js"></script>
+        </div>
+        <!-- ----------------------------------------- FIN CARTAS -------------------------------------------------------------- -->
+        <div class="contactanos">
+            <h2 id="page-3">Contáctanos</h2>
+            <div class="iconos">
+                <a href="https://facebook.com" target="black_" class="icon-button facebook"><i class="fab fa-facebook-f"></i>
+                <span></span>
+            </a>
+                <a href="https://instagram.com" class="icon-button facebook"><i class="fab fa-facebook-f"></i>
+            <span></span>
+             </a>
+                <a href="mailto:noreply@google.com" class="icon-button facebook"><i class="fab fa-facebook-f"></i>
+        <span></span>
+            </a>
+            </div>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
