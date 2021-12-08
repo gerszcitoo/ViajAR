@@ -72,7 +72,7 @@ nav>ul>a:active {
     position: relative;
     flex-direction: row;
     height: 90vh;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/destinos/bsas/src/img/bsas.gif);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/destinos/caba/src/img/bs.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
